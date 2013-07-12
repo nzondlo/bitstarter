@@ -56,7 +56,7 @@ var performCheck = function($, checksfile) {
     var out = {};
     for(var ii in checks) {
 	var present = $(checks[ii]).length > 0;
-	out[checks[ii]] = present;
+ 	out[checks[ii]] = present;
     }
     return out;
 };
@@ -103,4 +103,5 @@ if(require.main == module) {
     }
 } else {
     exports.checkHtmlFile = checkHtmlFile;
+    exports.checkUrl = checkUrl;
 }
