@@ -41,32 +41,20 @@
       body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
-      .container {
-        width: 960px;
-      }
-      p.lead {
-        padding-top: 15px;
-      }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
-      }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
-      .video {
-        /* Internal border have 1px width, thus need to add 4 x 1px to 120px. */
-        height: 124px;
-        line-height: 124px;
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
       }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: https://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
+      p {
+        font-size: 18px;
+        line-height: 24px;
       }
-      div.row {
-        border: 1px solid;
-      }
+      
     </style>
   </head>
   <body>
@@ -100,6 +88,19 @@
       <!-- Font and apired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div class="row-fluid heading">
+	<div class="span12">
+	  <h1>Product</h1>
+	</div>
+      </div>
+      <div class="row-fluid subheading">
+	<div class="span12">
+	  <!-- Special typography from Bootstrap for lead paragraph. -->
+	  <!-- https://twitter.github.io/bootstrap/base-css.html#typography -->
+	  <p class="lead">One sentence description.</p>
+	</div>
+      </div>
+
 
     <div class="container">
       <div class="row navigation">
