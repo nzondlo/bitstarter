@@ -39,9 +39,27 @@
        }
       }
 
+      /* Add custom font faces via webfont kits */
+      @font-face {
+       font-family: 'cherry_swashregular';
+       src: url('assets/webfonts/cherryswash/cherryswash-regular-webfont.eot');
+       src: url('assets/webfonts/cherryswash/cherryswash-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/webfonts/cherryswash/cherryswash-regular-webfont.woff') format('woff'),
+         url('assets/webfonts/cherryswash/cherryswash-regular-webfont.ttf') format('truetype'),
+         url('assets/webfonts/cherryswash/cherryswash-regular-webfont.svg#cherry_swashregular') format('svg');
+       font-weight: normal;
+       font-style: normal;
+      }
+
       /* All form factors */
 
       /* Main body headings */    
+
+      .cherryswash {
+        color: white;
+        text-shadow: -3px 0 orange, 0 3px orange, 3px 0 orange, 0 -3px orange;
+        font-family: cherryswash-regular;
+      }
       body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
@@ -132,20 +150,20 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
 	<div class="span12">
-	  <h1>Product</h1>
+	  <h1 class="cherryswash">Quimble.co</h1>
 	</div>
       </div>
       <div class="row-fluid subheading">
 	<div class="span12">
 	  <!-- Special typography from Bootstrap for lead paragraph. -->
 	  <!-- https://twitter.github.io/bootstrap/base-css.html#typography -->
-	  <p class="lead">One sentence description.</p>
+	  <p class="lead">Learn 'how' through screenshots, not docs.</p>
 	</div>
       </div>
       <div class="row-fluid pitch">
 	<div class="span5 offset1 video">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
+	  <Img class="img-polaroid" src="http://i.imgur.com/pBnJQdC.png?2">
+	</Div>
 	
 	<!-- We define a new 'actions' div to contain the statistics, order and share buttons -->
 	<div class="span5 actions">
@@ -154,12 +172,12 @@
 	      <div class="span4">
 		<!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries. -->
 		<div class="linediv-l">
-		  <h3>1000</h3>  <p>backers</p>
+		  <h3>0</h3>  <p>backers</p>
 		</div>
 	      </div>
 	      <div class="span4">
 		<div class="linediv-c">
-		  <h3>$6000</h3> <p>of $10,000</p>
+		  <h3>$0</h3> <p>of $1500</p>
 		</div>
 	      </div>
 	      <div class="span4">
@@ -197,18 +215,18 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
 	<div class="span5 offset1 asset">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	  <img class="img-polaroid" src="http://i.imgur.com/jLlZRZV.jpg">
 	</div>
 	<div class="span5 copy">
 	  <p>
-	    lorem upset nonsense bullshit whateever I don't care I don't care I don't care. this is stuff stuff stuff stuff stuff. I need to fill this space to get an idea of what is going on on the webpage.
+	    Look at all this. There's an entire subset of books dedicated to wasting your time trying to learn a piece of software. But you sure as hell don't want to read a 300 page book to make the best slideshow, or most bangin' memo in the office. That Friday deadline is coming up fast, and simply, you just don't have the time or the cares in the world to give.
 	  </p>
 	</div>
       </div>
       <div class="row-fluid section2">
 	<div class="span5 offset1 copy copy-right">
 	  <p>
-	    lorem upset nonsense bullshit whateever I don't care I don't care I don't care. this is stuff stuff stuff stuff stuff. I need to fill this space to get an idea of what is going on on the webpage.
+	    This is where Quimble comes into your life. There's no need to be the authority on any piece of standard office software anymore. Also, don't waste your time Googling "How do I right justify this document in Word 2010?" or "How do I add reference cells on another sheet in Excel 2007?". These answers might be easier to find, but more obscure features are going to be buried in a mountain of message board answers and half-baked forum responses.  
 	  </p>
 	</div>
 	<div class="span5 asset">
@@ -227,12 +245,12 @@
 	      <div class="according-heading">
 		<a class="accordian-toggle" data-toggle="collapse"
 		   data-parent="#accordian2" href="#collapseOne">
-		  What does FAQ stand for?
+		  What does 'Quimble' stand for?
 		</a>
 	      </div>
 	      <div id="collapseOne" class="accordian-body collapse">
 		<div class="accordian-inner">
-		  Frequently Asked Question.
+		  Nothing really. It rolled off the tongue well when a few friends were sitting around a college dining hall table coming up with name for a web startup.
 		</div>
 	      </div>
 	    </div>
@@ -240,12 +258,14 @@
 	      <div class="accordian-heading">
 		<a class="accordian-toggle" data-toggle="collapse"
 		   data-parent="#accordian2" href="#collapseTwo">
-		What's a Frequently Asked Question?
+		Why would I ever come here?
 		</a>
 	      </div>
 	      <div id="collapseTwo" class="accoridan-body collapse">
 		<div class="accordian-inner">
-		  A question which commonly asked by users.
+		  <p>Because you're tired of scouring the Internet to find that one feature from some software buried under many menus, button presses, and windows.</p>
+		  <p>You're tired of searching through countless Internet forums and crowd answer websites to find a vague answer that only sort of pertains to what you're looking for.</p>
+		  <p>Simply put, no one has time for all of that. Our search function will bring you to a page that will give you a series of screen shot with arrows telling you EXACTLY where to click/type to get what you need. If you don't know the exact name of the feature, then we've provided a en exhaustive search method that will allow you to narrow down to the exact feature in your piece of software.</p>
 		</div>
 	      </div>
 	    </div>
