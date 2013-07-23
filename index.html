@@ -55,11 +55,14 @@
 
       /* Main body headings */    
 
-      .cherryswash {
+      .brand {
+         font-family: cherryswash-regular;
+      }
+      h1.brand {
         color: white;
         text-shadow: -3px 0 orange, 0 3px orange, 3px 0 orange, 0 -3px orange;
-        font-family: cherryswash-regular;
       }
+
       body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
@@ -129,7 +132,7 @@
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	  </button>
-	  <a class="brand" href="#">Bitstarter</a>
+	  <a class="brand" href="#">Quimble</a>
 	  <div class="nav-collapse collapse">
 	    <ul class="nav">
 	      <li class="active"><a href="#">Home</a></li>
@@ -150,7 +153,7 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
 	<div class="span12">
-	  <h1 class="cherryswash">Quimble.co</h1>
+	  <h1 class="brand">Quimble.co</h1>
 	</div>
       </div>
       <div class="row-fluid subheading">
@@ -162,8 +165,8 @@
       </div>
       <div class="row-fluid pitch">
 	<div class="span5 offset1 video">
-	  <Img class="img-polaroid" src="http://i.imgur.com/pBnJQdC.png?2">
-	</Div>
+	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	</div>
 	
 	<!-- We define a new 'actions' div to contain the statistics, order and share buttons -->
 	<div class="span5 actions">
@@ -218,6 +221,7 @@
 	  <img class="img-polaroid" src="http://i.imgur.com/jLlZRZV.jpg">
 	</div>
 	<div class="span5 copy">
+	  <h3> Think about it. </h3>
 	  <p>
 	    Look at all this. There's an entire subset of books dedicated to wasting your time trying to learn a piece of software. But you sure as hell don't want to read a 300 page book to make the best slideshow, or most bangin' memo in the office. That Friday deadline is coming up fast, and simply, you just don't have the time or the cares in the world to give.
 	  </p>
@@ -225,16 +229,25 @@
       </div>
       <div class="row-fluid section2">
 	<div class="span5 offset1 copy copy-right">
+	  <h3> Try Quimbling before Googling </h3>
 	  <p>
 	    This is where Quimble comes into your life. There's no need to be the authority on any piece of standard office software anymore. Also, don't waste your time Googling "How do I right justify this document in Word 2010?" or "How do I add reference cells on another sheet in Excel 2007?". These answers might be easier to find, but more obscure features are going to be buried in a mountain of message board answers and half-baked forum responses.  
 	  </p>
 	</div>
 	<div class="span5 asset">
+	  <img class="img-polaroid" src="http://i.imgur.com/pBnJQdC.png?2">
+	</div>
+      </div>
+      <div class="row-fluid section3">
+	<div class="span5 offset1 asset">
+	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	</div>
+	<div class="span5 asset">
 	  <img class="img-polaroid" src="http://placehold.it/480x300">
 	</div>
       </div>
-      
-      <!-- For the FAW, we introduce a little bit of JS, using the accordion. -->
+
+      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and bootstrap.js as depencies. -->
       <!-- https://twitter.githib.io/bootstrap/javascript.html#collapse -->
       <div class="row-fluid faq">
