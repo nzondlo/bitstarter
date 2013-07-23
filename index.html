@@ -66,6 +66,14 @@
       body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
+
+      .content {
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        border: 1px solid #d0d5cb;
+        box-shadow: 0 0 0 4px rgba(208,213,203,0.3);
+        padding-bottom: 10px;
+      }
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
@@ -90,6 +98,9 @@
       .actions {
         background-color: #343434;
         padding: 3% 0%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
       }
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
@@ -163,122 +174,124 @@
 	  <p class="lead">Learn 'how' through screenshots, not docs.</p>
 	</div>
       </div>
-      <div class="row-fluid pitch">
-	<div class="span5 offset1 video">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
+      <div class="container content">
+	<div class="row-fluid pitch">
+	  <div class="span5 offset1 video">
+	    <img class="img-polaroid" src="http://placehold.it/480x300">
+	  </div>
+	  
+	  <!-- We define a new 'actions' div to contain the statistics, order and share buttons -->
+	  <div class="span5 actions">
+	    <div class="span8 offset2">
+	      <div class="statistics">
+		<div class="span4">
+		  <!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries. -->
+		  <div class="linediv-l">
+		    <h3>0</h3>  <p>backers</p>
+		  </div>
+		</div>
+		<div class="span4">
+		  <div class="linediv-c">
+		    <h3>$0</h3> <p>of $1500</p>
+		  </div>
+		</div>
+		<div class="span4">
+		  <div class="linediv-r">
+		    <h3>10</h3> <p>days left</p>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	    <div class="span10 offset1">
+	      <!-- Bootstrap progress bar -->
+	      <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+	      <div class="thermometer progress active">
+		<div class="bar bar-success" style="width: 60%;"></div>
+		<div class="bar bar-warning" style="width: 40%;"></div>
+	      </div>
+	    </div>
+	    <div class="span6 offset3 order">
+	      <!-- Standard Boostrap button. -->
+	      <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+	      <button class="btn btn-success btn-large">Preorder</button>
+	    </div>
+	    <div class="span8 offset2 social">
+	      <!-- Social buttons are not included in default Bootstrap. -->
+	      <!-- See: https://noizwaves.github.io/bootstrap-social-buttons -->
+	      <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+	      <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	    </div>
+	  </div>
 	</div>
 	
-	<!-- We define a new 'actions' div to contain the statistics, order and share buttons -->
-	<div class="span5 actions">
-	  <div class="span8 offset2">
-	    <div class="statistics">
-	      <div class="span4">
-		<!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries. -->
-		<div class="linediv-l">
-		  <h3>0</h3>  <p>backers</p>
-		</div>
-	      </div>
-	      <div class="span4">
-		<div class="linediv-c">
-		  <h3>$0</h3> <p>of $1500</p>
-		</div>
-	      </div>
-	      <div class="span4">
-		<div class="linediv-r">
-		  <h3>10</h3> <p>days left</p>
-		</div>
-	      </div>
-	    </div>
+	<!-- Beyond this part the marketing copy begins. -->
+	<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+	<!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+	<!-- http://placehold.it -->
+	<div class="row-fluid section1">
+	  <div class="span5 offset1 asset">
+	    <img class="img-polaroid" src="http://i.imgur.com/jLlZRZV.jpg">
 	  </div>
-	  <div class="span10 offset1">
-	    <!-- Bootstrap progress bar -->
-	    <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-	    <div class="thermometer progress active">
-	      <div class="bar bar-success" style="width: 60%;"></div>
-	      <div class="bar bar-warning" style="width: 40%;"></div>
-	    </div>
-	  </div>
-	  <div class="span6 offset3 order">
-	    <!-- Standard Boostrap button. -->
-	    <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-	    <button class="btn btn-success btn-large">Preorder</button>
-	  </div>
-	  <div class="span8 offset2 social">
-	    <!-- Social buttons are not included in default Bootstrap. -->
-	    <!-- See: https://noizwaves.github.io/bootstrap-social-buttons -->
-	    <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-	    <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	  <div class="span5 copy">
+	    <h3> Think about it. </h3>
+	    <p>
+	      Look at all this. There's an entire subset of books dedicated to wasting your time trying to learn a piece of software. But you sure as hell don't want to read a 300 page book to make the best slideshow, or most bangin' memo in the office. That Friday deadline is coming up fast, and simply, you just don't have the time or the cares in the world to give.
+	    </p>
 	  </div>
 	</div>
-      </div>
-      
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-	<div class="span5 offset1 asset">
-	  <img class="img-polaroid" src="http://i.imgur.com/jLlZRZV.jpg">
+	<div class="row-fluid section2">
+	  <div class="span5 offset1 copy copy-right">
+	    <h3> Try Quimbling before Googling </h3>
+	    <p>
+	      This is where Quimble comes into your life. There's no need to be the authority on any piece of standard office software anymore. Also, don't waste your time Googling "How do I right justify this document in Word 2010?" or "How do I add reference cells on another sheet in Excel 2007?". These answers might be easier to find, but more obscure features are going to be buried in a mountain of message board answers and half-baked forum responses.  
+	    </p>
+	  </div>
+	  <div class="span5 asset">
+	    <img class="img-polaroid" src="http://i.imgur.com/pBnJQdC.png?2">
+	  </div>
 	</div>
-	<div class="span5 copy">
-	  <h3> Think about it. </h3>
-	  <p>
-	    Look at all this. There's an entire subset of books dedicated to wasting your time trying to learn a piece of software. But you sure as hell don't want to read a 300 page book to make the best slideshow, or most bangin' memo in the office. That Friday deadline is coming up fast, and simply, you just don't have the time or the cares in the world to give.
-	  </p>
+	<div class="row-fluid section3">
+	  <div class="span5 offset1 asset">
+	    <img class="img-polaroid" src="http://placehold.it/480x300">
+	  </div>
+	  <div class="span5 asset">
+	    <img class="img-polaroid" src="http://placehold.it/480x300">
+	  </div>
 	</div>
-      </div>
-      <div class="row-fluid section2">
-	<div class="span5 offset1 copy copy-right">
-	  <h3> Try Quimbling before Googling </h3>
-	  <p>
-	    This is where Quimble comes into your life. There's no need to be the authority on any piece of standard office software anymore. Also, don't waste your time Googling "How do I right justify this document in Word 2010?" or "How do I add reference cells on another sheet in Excel 2007?". These answers might be easier to find, but more obscure features are going to be buried in a mountain of message board answers and half-baked forum responses.  
-	  </p>
-	</div>
-	<div class="span5 asset">
-	  <img class="img-polaroid" src="http://i.imgur.com/pBnJQdC.png?2">
-	</div>
-      </div>
-      <div class="row-fluid section3">
-	<div class="span5 offset1 asset">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
-	<div class="span5 asset">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
-      </div>
 
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as depencies. -->
-      <!-- https://twitter.githib.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-	<div class="span10 offset1">
-	  <h3>FAQ</h3>
-	  <div class="accordian" id="accordian2">
-	    <div class="accordian-group">
-	      <div class="according-heading">
-		<a class="accordian-toggle" data-toggle="collapse"
-		   data-parent="#accordian2" href="#collapseOne">
-		  What does 'Quimble' stand for?
-		</a>
-	      </div>
-	      <div id="collapseOne" class="accordian-body collapse">
-		<div class="accordian-inner">
-		  Nothing really. It rolled off the tongue well when a few friends were sitting around a college dining hall table coming up with name for a web startup.
+	<!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+	<!-- This brings in jquery.js and bootstrap.js as depencies. -->
+	<!-- https://twitter.githib.io/bootstrap/javascript.html#collapse -->
+	<div class="row-fluid faq">
+	  <div class="span10 offset1">
+	    <h3>FAQ</h3>
+	    <div class="accordian" id="accordian2">
+	      <div class="accordian-group">
+		<div class="according-heading">
+		  <a class="accordian-toggle" data-toggle="collapse"
+		     data-parent="#accordian2" href="#collapseOne">
+		    What does 'Quimble' stand for?
+		  </a>
+		</div>
+		<div id="collapseOne" class="accordian-body collapse">
+		  <div class="accordian-inner">
+		    Nothing really. It rolled off the tongue well when a few friends were sitting around a college dining hall table coming up with name for a web startup.
+		  </div>
 		</div>
 	      </div>
-	    </div>
-	    <div class="accordian-group">
-	      <div class="accordian-heading">
-		<a class="accordian-toggle" data-toggle="collapse"
-		   data-parent="#accordian2" href="#collapseTwo">
-		Why would I ever come here?
-		</a>
-	      </div>
-	      <div id="collapseTwo" class="accoridan-body collapse">
-		<div class="accordian-inner">
-		  <p>Because you're tired of scouring the Internet to find that one feature from some software buried under many menus, button presses, and windows.</p>
-		  <p>You're tired of searching through countless Internet forums and crowd answer websites to find a vague answer that only sort of pertains to what you're looking for.</p>
-		  <p>Simply put, no one has time for all of that. Our search function will bring you to a page that will give you a series of screen shot with arrows telling you EXACTLY where to click/type to get what you need. If you don't know the exact name of the feature, then we've provided a en exhaustive search method that will allow you to narrow down to the exact feature in your piece of software.</p>
+	      <div class="accordian-group">
+		<div class="accordian-heading">
+		  <a class="accordian-toggle" data-toggle="collapse"
+		     data-parent="#accordian2" href="#collapseTwo">
+		    Why would I ever come here?
+		  </a>
+		</div>
+		<div id="collapseTwo" class="accoridan-body collapse">
+		  <div class="accordian-inner">
+		    <p>Because you're tired of scouring the Internet to find that one feature from some software buried under many menus, button presses, and windows.</p>
+		    <p>You're tired of searching through countless Internet forums and crowd answer websites to find a vague answer that only sort of pertains to what you're looking for.</p>
+		    <p>Simply put, no one has time for all of that. Our search function will bring you to a page that will give you a series of screen shot with arrows telling you EXACTLY where to click/type to get what you need. If you don't know the exact name of the feature, then we've provided a en exhaustive search method that will allow you to narrow down to the exact feature in your piece of software.</p>
+		  </div>
 		</div>
 	      </div>
 	    </div>
