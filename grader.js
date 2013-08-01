@@ -27,7 +27,7 @@ var cheerio = require('cheerio');
 var rest = require('restler');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
-var URL_DEFAULT = "http://secure-cliffs-3397.herokuapp.com/";
+
 
 var assertFileExists = function(infile) {
     var instr = infile.toString();
@@ -77,7 +77,6 @@ var clone = function(fn) {
     return fn.bind({});
 };
 
-//var processJson = function(file, 
 
 if(require.main == module) {
     program
